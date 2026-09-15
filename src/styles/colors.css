@@ -1,0 +1,46 @@
+/* 
+ * المربد ماركت - نظام الألوان الأساسي
+ * Almarbed Market - Color System
+ */
+
+:root {
+  /* الألوان الأساسية */
+  --color-primary-dark: #4a1d7f;        /* البنفسجي الملكي الداكن */
+  --color-primary-light: #6b2fa0;       /* البنفسجي الملكي فاتح */
+  --color-accent-gold: #d4a574;         /* الذهبي */
+  --color-accent-gold-light: #e8c9a0;   /* الذهبي الفاتح */
+  
+  /* ألوان التوهج */
+  --color-glow-purple: rgba(107, 47, 160, 0.3);     /* توهج بنفسجي معتدل */
+  --color-glow-gold: rgba(212, 165, 116, 0.2);      /* توهج ذهبي معتدل */
+  
+  /* ألوان داعمة */
+  --color-text-dark: #1a1a1a;
+  --color-text-light: #ffffff;
+  --color-background: #f9f7f4;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f5f2ee;
+  --color-border: #e0d5c7;
+  
+  /* ألوان الحالات */
+  --color-success: #27ae60;
+  --color-warning: #f39c12;
+  --color-error: #e74c3c;
+  --color-info: #3498db;
+  
+  /* ظلال وتدرجات */
+  --gradient-primary: linear-gradient(135deg, #4a1d7f 0%, #6b2fa0 100%);
+  --gradient-accent: linear-gradient(135deg, #d4a574 0%, #e8c9a0 100%);
+  --gradient-premium: linear-gradient(135deg, #4a1d7f 0%, #d4a574 50%, #6b2fa0 100%);
+}
+
+/* الوضع الداكن */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-dark: #f5f5f5;
+    --color-background: #1a1a1a;
+    --color-surface: #2a2a2a;
+    --color-surface-secondary: #3a3a3a;
+    --color-border: #4a4a4a;
+  }
+}
